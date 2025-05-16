@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            background-color: #eaf9cf;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .card-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background-color: #eaf9cf;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .custom-header {
+            background-color: #098513;
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+
+        .logo {
+            width: 80px;
+        }
+
+        .search-bar {
+            flex: 1;
+            margin-left: 15px;
+            margin-right: 400px;
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 30px;
+            padding: 5px 15px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 19px;
+        }
+
+        .icon-row {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .icon-item {
+            text-align: center;
+            color: #353131;
+            text-decoration: none;
+        }
+
+        .icon-item img {
+            width: 60px;
+            height: auto;
+        }
+
+        .icon-item span {
+            display: block;
+            font-size: 0.95rem;
+            margin-top: 0.3rem;
+        }
+
+        .section {
+            padding: 2rem;
+        }
+
+        .section h2 {
+            color: #0e3b0e;
+            font-size: 26px;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .level {
+            background-color: #c2e7b0;
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .level h3 {
+            margin-bottom: 1rem;
+            font-size: 22px;
+            color: #0e3b0e;
+        }
+
+        .achievement {
+            background-color: #ffffff;
+            padding: 0.8rem 1rem;
+            border-radius: 12px;
+            margin-bottom: 0.8rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .reward {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #098513;
+        }
+
+        .progress-bar-container {
+            margin-top: 1rem;
+            background-color: #d6f0c2;
+            border-radius: 30px;
+            height: 20px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            width: 60%;
+            /* cambia esto dinámicamente */
+            background-color: #098513;
+            border-radius: 30px;
+            transition: width 0.3s ease;
+        }
+        .bottom-nav {
+            position:relative;
+            bottom: 0;
+            left: 0;
+            width: 900px;
+            background-color: #098513;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+            box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.2);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .nav-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .nav-btn img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <header class="custom-header">
+            <img src="imagenes/lorito.png" alt="Logo" class="logo" />
+
+            <div class="search-bar">
+                <input type="text" placeholder="Busca aquí..." />
+            </div>
+
+            <nav class="icon-row">
+                <a href="itinerario.html" class="icon-item">
+                    <img src="imagenes/itinerario.png" alt="Itinerario" />
+                    <span>Itinerarios</span>
+                </a>
+                <a href="achievements.html" class="icon-item">
+                    <img src="imagenes/logros.png" alt="Logros" />
+                    <span>Logros</span>
+                </a>
+                <a href="robertoia.html" class="icon-item">
+                    <img src="imagenes/explorar.png" alt="IA" />
+                    <span>Roberto.IA</span>
+                </a>
+                <a href="comunidad.html" class="icon-item">
+                    <img src="imagenes/chat-icon.png" alt="Comunidad" />
+                    <span>Comunidad</span>
+                </a>
+            </nav>
+        </header>
+
+        <div class="section">
+            <h2>🎖️ Nivel 1 - Explorador Novato</h2>
+            <div class="level">
+                <div class="achievement">📍 Visita tu primer destino <span class="reward">5% dto. en restaurantes
+                        🍽️</span></div>
+                <div class="achievement">🧳 Completa un itinerario <span class="reward">Entrada gratuita a un museo
+                        🏛️</span></div>
+                <div class="achievement">📸 Comparte una foto en la comunidad <span class="reward">2x1 en cine 🎬</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar-fill" style="width: 67%;"></div>
+                </div>
+            </div>
+
+            <h2>🌟 Nivel 2 - Viajero Entusiasta</h2>
+            <div class="level">
+                <div class="achievement">🌄 Realiza una actividad al aire libre <span class="reward">Descuento en
+                        actividades deportivas 🧗</span></div>
+                <div class="achievement">🎭 Asiste a un evento cultural <span class="reward">Entradas al teatro
+                        🎟️</span></div>
+                <div class="achievement">🍷 Prueba la gastronomía local <span class="reward">Copa de bienvenida en
+                        restaurante 🍷</span></div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar-fill" style="width: 40%;"></div>
+                </div>
+            </div>
+
+            <h2>💼 Nivel 3 - Aventurero Pro</h2>
+            <div class="level">
+                <div class="achievement">🌍 Visita 5 destinos distintos <span class="reward">15% dto. en hotel 🏨</span>
+                </div>
+                <div class="achievement">🏞️ Sube una guía con recomendaciones <span class="reward">Crédito en
+                        experiencias guiadas 🧭</span></div>
+                <div class="achievement">🎉 Participa en un evento de la comunidad <span class="reward">Kit de viaje
+                        🎒</span></div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar-fill" style="width: 10%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bottom-nav">
+            <a href="dashboard.html" class="nav-btn">
+                <img src="imagenes/home-icon.png" alt="Inicio" />
+                <span>Inicio</span>
+            </a>
+            <a href="logout.html" class="nav-btn">
+                <img src="imagenes/logout-icon.png" alt="Cerrar sesión" />
+                <span>Cierre de sesión</span>
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>

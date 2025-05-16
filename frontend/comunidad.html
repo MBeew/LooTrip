@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=900, height=1118.6">
+    <title>LoopTrip - Comunidad</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <style>
+        body {
+            margin: 0;
+            background-color: #eaf9cf;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .card-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            border-radius: 25px;
+            background-color: #eaf9cf;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .custom-header {
+            background-color: #098513;
+            border-radius: 20px;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            width: 200px;
+            font-size: 14px;
+        }
+
+        .icon-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .icon-item img {
+            width: 30px;
+            height: 30px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #098513;
+            text-align: center;
+        }
+
+        .filter-section {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .filter-section select {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            margin: 0 5px;
+            width: 180px;
+        }
+
+        .post {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 15px;
+            margin: 20px auto;
+            width: 95%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .post h3 {
+            color: #098513;
+        }
+
+        .post img,
+        .post video {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .highlights {
+            background-color: #f1ffe1;
+            border-left: 5px solid #098513;
+            padding: 10px 15px;
+            margin: 20px auto;
+            border-radius: 15px;
+            width: 90%;
+        }
+
+        .form-section {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form-section input,
+        .form-section textarea,
+        .form-section select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .form-section button {
+            background-color: #098513;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .bottom-nav {
+            position:relative;
+            bottom: 0;
+            left: 0;
+            width: 900px;
+            background-color: #098513;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+            box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.2);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .nav-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .nav-btn img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <header class="custom-header">
+            <img src="imagenes/lorito.png" alt="Logo" class="logo" />
+
+            <div class="search-bar">
+                <input type="text" placeholder="Busca aquí..." />
+            </div>
+
+            <nav class="icon-row">
+                <a href="itinerario.html" class="icon-item">
+                    <img src="imagenes/itinerario.png" alt="Itinerario" />
+                    <span>Itinerarios</span>
+                </a>
+                <a href="achievements.html" class="icon-item">
+                    <img src="imagenes/logros.png" alt="Logros" />
+                    <span>Logros</span>
+                </a>
+                <a href="robertoia.html" class="icon-item">
+                    <img src="imagenes/explorar.png" alt="IA" />
+                    <span>Roberto.IA</span>
+                </a>
+                <a href="comunidad.html" class="icon-item">
+                    <img src="imagenes/chat-icon.png" alt="Comunidad" />
+                    <span>Comunidad</span>
+                </a>
+            </nav>
+        </header>
+
+        <h2>🌍 Comunidad de Viajeros</h2>
+
+        <div class="filter-section">
+            <select>
+                <option value="">Filtrar por país</option>
+                <option value="colombia">Colombia</option>
+                <option value="mexico">México</option>
+                <option value="españa">España</option>
+                <option value="argentina">Argentina</option>
+            </select>
+            <select>
+                <option value="">Filtrar por ciudad</option>
+                <option value="bogota">Bogotá</option>
+                <option value="medellin">Medellín</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="cdmx">CDMX</option>
+            </select>
+        </div>
+
+        <div class="post">
+            <h3>✨ Mi experiencia en Medellín</h3>
+            <p>Fui en julio y el clima fue perfecto ☀️. Recomiendo ir al Parque Arví los domingos y probar las arepas
+                rellenas 🌽🧀.</p>
+            <img src="imagenes/medellin.jpg" alt="Medellín" />
+        </div>
+
+        <div class="post">
+            <h3>🎥 Video en el Carnaval de Barranquilla</h3>
+            <p>¡Una experiencia inolvidable llena de color y música! Mejor ir a finales de febrero. 🎭💃</p>
+            <video controls>
+                <source src="videos/carnaval.mp4" type="video/mp4" />
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+
+        <div class="highlights">
+            <strong>💡 Recomendaciones:</strong><br />
+            - Ir a los museos por la mañana para evitar filas.<br />
+            - El mejor mes para visitar Cartagena es diciembre por sus brisas y eventos navideños 🎄.<br />
+            - Usar transporte público entre semana es más rápido que fines de semana.
+        </div>
+
+        <div class="form-section">
+            <h3>✍️ Comparte tu experiencia</h3>
+            <input type="text" placeholder="Título de tu experiencia" />
+            <textarea rows="4" placeholder="Cuéntanos tu recomendación..."></textarea>
+            <input type="file" accept="image/*,video/*" />
+            <button>Publicar</button>
+        </div>
+        <footer class="bottom-nav">
+            <a href="dashboard.html" class="nav-btn">
+                <img src="imagenes/home-icon.png" alt="Inicio" />
+                <span>Inicio</span>
+            </a>
+            <a href="logout.html" class="nav-btn">
+                <img src="imagenes/logout-icon.png" alt="Cerrar sesión" />
+                <span>Cierre de sesión</span>
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>
